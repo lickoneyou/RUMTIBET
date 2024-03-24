@@ -1,6 +1,22 @@
 doctype html
-html(lang= 'ru')
+html(lang='ru')
   head
     meta(charset='utf-8')
-    title= 'title'
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0" )
+    link(rel="stylesheet", href="main.css")
+    title РумТибет
   body
+   header(style=`background-image: url(${require('./images/headerBG.png')})`)
+    .container
+      .menu
+        img.logo(src=require('./images/logo.png'), alt='logo')
+        nav 
+          ul 
+            li Главная
+            li Про гида
+            li Программа тура
+            li Стоимость
+            li Блог
+            li Контакты
+        button Консультация    

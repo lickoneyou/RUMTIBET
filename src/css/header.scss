@@ -1,0 +1,50 @@
+@import 'mixins.scss';
+
+header {
+  height: 985px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  @include container-center;
+
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      min-width: 660px;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          color: rgb(253, 253, 253);
+          font-family: Nunito Sans Regular;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 25px;
+        }
+      }
+    }
+    button {
+      padding: 12px 24px 12px 24px;
+      border-radius: 4px;
+      background: rgb(26, 62, 62);
+
+      color: rgb(253, 253, 253);
+      font-family: Nunito Sans Regular;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 1.2%;
+      text-align: left;
+    }
+  }
+}

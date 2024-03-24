@@ -51,6 +51,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001600",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
