@@ -200,6 +200,7 @@ header {
     width: 290px;
     height: 50%;
     min-width: auto !important;
+    transition: all 500ms ease;
 
     .exitPopup {
       display: block;
