@@ -1,0 +1,71 @@
+@import 'mixins.scss';
+
+.explore {
+  padding: 100px 0;
+}
+
+.exploreContainer {
+  @include container-center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  height: 526px;
+}
+
+.exloreImgContainer {
+  grid-column: 1/6;
+  position: relative;
+
+  img:first-of-type {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.exploreDescription {
+  grid-column: 7/13;
+  display: flex;
+  align-items: center;
+
+  .exploreDescriptionWrapper {
+    height: 399px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .exploreSubtitle {
+      color: rgb(242, 190, 34);
+      font-family: Nunito Sans Regular;
+      font-size: 24px;
+      line-height: 20px;
+    }
+
+    h2 {
+      color: rgb(24, 18, 30);
+      font-family: Nunito Sans Regular;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 120%;
+    }
+
+    p {
+      color: rgb(24, 18, 30);
+      font-family: Nunito Sans Regular;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    button {
+      border-radius: 4px;
+      background: rgb(26, 62, 62);
+      padding: 16px 36px 16px 36px;
+      color: rgb(253, 253, 253);
+      font-family: Nunito Sans Regular;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

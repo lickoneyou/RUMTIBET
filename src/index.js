@@ -5,4 +5,5 @@ import './css/header.scss'
 import './main.scss'
 import './js/calendar'
 import './js/popup'
+import './css/explore.scss'
 
