@@ -12,7 +12,8 @@ html(lang='ru')
     .container
       .menu
         img.logo(src=require('./images/logo.png'), alt='logo')
-        nav 
+        nav
+          .exitPopup +
           ul 
             li Главная
             li Про гида
@@ -20,7 +21,11 @@ html(lang='ru')
             li Стоимость
             li Блог
             li Контакты
-        button Консультация
+        button.headerMenuBtn Консультация
+        .popUpOpenBtn 
+          span 
+          span 
+          span 
       .headerWrapper  
         h1 
           | Насладись прогулкой в горах
@@ -74,4 +79,5 @@ html(lang='ru')
                 option(value="20") 20
             p минимум 4 человека
           button Найти программу  
+        button.mobileBtn Найти программу  
 
