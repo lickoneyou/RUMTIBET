@@ -16,7 +16,7 @@
   grid-column: 1/6;
   position: relative;
 
-  img:first-of-type {
+  .positionAbsolute {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -81,7 +81,7 @@
     display: flex;
     justify-content: center;
 
-    img:first-of-type {
+    .positionAbsolute {
       position: absolute;
       margin-left: auto;
       margin-right: auto;

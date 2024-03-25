@@ -6,4 +6,4 @@ import './main.scss'
 import './js/calendar'
 import './js/popup'
 import './css/explore.scss'
-
+import './js/exploreSlider'
