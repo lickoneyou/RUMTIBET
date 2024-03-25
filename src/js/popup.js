@@ -6,8 +6,6 @@ openBtn.addEventListener('click', () => {
 })
 
 window.addEventListener('click', (e) => {
-  console.log(e.target.parentNode)
-
   if (
     e.target != popUp &&
     e.target != openBtn &&
