@@ -119,7 +119,40 @@ html(lang='ru')
           img(src=require('./images/sectionOffer/2.png'), alt='offerImg')
           img(src=require('./images/sectionOffer/3.png'), alt='offerImg')
           img(src=require('./images/sectionOffer/4.png'), alt='offerImg')
-      button Стоимость программы  
+      button Стоимость программы
+    section.popular
+      .popularContainer 
+        p.popularSubtitle по версии отдыхающих
+        h2.popularTitle Популярные направления
+        .popularCardWrapper
+
+          .card(style=`background-image: url(${require('./images/popularSection/1.png')})`)
+            .rate 
+              span 4.9
+            .costWrapper
+              .cardTitle 
+                h3 Озеро возле гор
+                h4 романтическое приключение
+              p.cost 480 $  
+
+          .card(style=`background-image: url(${require('./images/popularSection/2.png')})`) 
+            .rate 
+              span 4.5
+            .costWrapper
+              .cardTitle 
+                h3 Ночь в горах
+                h4 в компании друзей
+              p.cost 500 $  
+
+          .card(style=`background-image: url(${require('./images/popularSection/3.png')})`) 
+            .rate 
+              span 5.0
+            .costWrapper
+              .cardTitle 
+                h3 Йога в горах
+                h4 для тех, кто забоится о себе
+              p.cost 230 $
+        button Рейтинг направлений   
 
 
 

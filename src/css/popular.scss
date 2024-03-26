@@ -1,0 +1,130 @@
+@import 'mixins.scss';
+
+.popular {
+  padding: 80px 0 100px 0;
+
+  .popularContainer {
+    @include container-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .popularSubtitle {
+      color: rgb(242, 190, 34);
+      font-family: Nunito Sans Regular;
+      font-size: 24px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+
+    .popularTitle {
+      color: rgb(24, 18, 30);
+      font-family: Nunito Sans Regular;
+      font-size: 32px;
+      line-height: 120%;
+      margin-bottom: 50px;
+    }
+
+    .popularCardWrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 32%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        border-radius: 32px;
+
+        .rate {
+          border-radius: 4px 0px 0px 4px;
+          backdrop-filter: blur(4px);
+          background: rgba(253, 253, 253, 0.4);
+          padding: 4px 8px 4px 8px;
+          width: 65px;
+          position: absolute;
+          right: 0;
+          top: 50px;
+
+          span {
+            color: rgb(26, 62, 62);
+            font-family: Nunito Sans Bold;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: end;
+            display: flex;
+            justify-content: space-evenly;
+          }
+
+          span::before {
+            content: '★';
+            color: rgb(242, 190, 34);
+          }
+        }
+
+        .costWrapper {
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 90px;
+          backdrop-filter: blur(6px);
+          background: rgba(255, 255, 255, 0.2);
+          padding: 25px 25px;
+
+          .cardTitle {
+            transition: all 400ms ease;
+
+            h3 {
+              color: rgb(253, 253, 253);
+              font-family: Nunito Sans Bold;
+              font-size: 24px;
+              line-height: 120%;
+            }
+
+            h4 {
+              color: rgb(253, 253, 253);
+              font-family: Nunito Sans Regular;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+
+          .cost {
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 8px 16px 8px 16px;
+
+            color: rgb(253, 253, 253);
+            font-family: Nunito Sans Bold;
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    button {
+      border-radius: 4px;
+      background: rgb(26, 62, 62);
+      padding: 16px 36px 16px 36px;
+
+      color: rgb(253, 253, 253);
+      font-family: Nunito Sans Regular;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .card:hover .cardTitle {
+    margin-top: -300px;
+  }
+}
