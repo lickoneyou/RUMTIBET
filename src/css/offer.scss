@@ -12,6 +12,7 @@
 
     .offerDescriptionWrapper {
       grid-column: 1/7;
+      margin-bottom: 40px;
 
       .offerSubtitle {
         color: rgb(242, 190, 34);
@@ -81,5 +82,18 @@
     img {
       margin: 10px;
     }
+  }
+
+  button {
+    border-radius: 4px;
+    background: rgb(26, 62, 62);
+    padding: 16px 36px 16px 36px;
+    grid-column: 1/4;
+
+    color: rgb(253, 253, 253);
+    font-family: Nunito Sans Regular;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.2%;
   }
 }
