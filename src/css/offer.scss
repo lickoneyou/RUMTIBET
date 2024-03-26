@@ -1,0 +1,85 @@
+@import 'mixins.scss';
+
+.offer {
+  background-color: rgb(244, 245, 244);
+  padding: 80px 0 100px 0;
+
+  .offerContainer {
+    @include container-center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+
+    .offerDescriptionWrapper {
+      grid-column: 1/7;
+
+      .offerSubtitle {
+        color: rgb(242, 190, 34);
+        font-family: Nunito Sans Regular;
+        font-size: 24px;
+        line-height: 20px;
+        margin-bottom: 8px;
+      }
+
+      .offerTitle {
+        color: rgb(24, 18, 30);
+        font-family: Nunito Sans Regular;
+        font-size: 32px;
+        line-height: 120%;
+        margin-bottom: 40px;
+      }
+
+      .offerDescription {
+        color: rgb(24, 18, 30);
+        font-family: Nunito Sans Regular;
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 40px;
+      }
+
+      .descriptionProgramms {
+        .programmsItem {
+          display: flex;
+          margin-bottom: 40px;
+
+          img {
+            object-fit: contain;
+          }
+
+          .descriptionWrapper {
+            margin-left: 16px;
+
+            h3 {
+              color: rgb(24, 18, 30);
+              font-family: Nunito Sans Regular;
+              font-size: 18px;
+              line-height: 20px;
+              letter-spacing: 1.2%;
+              margin-bottom: 4px;
+            }
+            p {
+              color: rgb(0, 0, 0);
+              font-family: Nunito Sans Regular;
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+        .programmsItem:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .offerImg {
+    grid-column: 7/13;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    img {
+      margin: 10px;
+    }
+  }
+}
