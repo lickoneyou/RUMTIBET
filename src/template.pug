@@ -210,7 +210,22 @@ html(lang='ru')
         img(src=require('./images/impressionSection/4.png'), alt='photo')
         img(src=require('./images/impressionSection/5.png'), alt='photo')
         img(src=require('./images/impressionSection/6.png'), alt='photo')
-      button Наш pinterest  
+      button Наш pinterest
+  section.contacts 
+    .contactsContainer 
+      .contactsTitleWrapper 
+        p.contactsSubtitle актуально
+        h2.contactsTitle Получайте полезные рассылки о путешествиях
+      .contactsEmailWrapper 
+        form
+          label(for="") Введите e-mail адрес
+          .inputWrapper
+            input(placeholder='name@domain.com') 
+            button Подписаться на новости
+        p подписываясь на новости, вы автоматически соглашаетесь 
+          span с условиями обработки персональных данных 
+          | и 
+          span правилами рекламных рассылок
 
 
 

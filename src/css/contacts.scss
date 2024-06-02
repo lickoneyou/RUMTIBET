@@ -1,0 +1,84 @@
+@import 'mixins.scss';
+
+.contacts {
+  background: linear-gradient(to top, #1a3e3e 50%, white 50%);
+}
+
+.contactsContainer {
+  @include container-center;
+  display: flex;
+  padding: 40px 100px;
+  border-radius: 6px;
+  background: #fdfdfd;
+  box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
+  gap: 60px;
+
+  .contactsSubtitle {
+    color: rgb(242, 190, 34);
+    font-family: Nunito Sans Regular;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  .contactsTitle {
+    color: #18121e;
+    font-family: 'Nunito Sans Bold';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 31.2px */
+  }
+}
+
+.contactsEmailWrapper {
+  form {
+    label {
+      color: #18121e;
+      font-family: 'Nunito Sans Regular';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px; /* 125% */
+    }
+    .inputWrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 16px;
+      margin-bottom: 8px;
+      margin-top: 8px;
+      input {
+        display: flex;
+        width: 280px;
+        height: 44px;
+        padding: 0px 16px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 4px;
+        background: #f3f5f4;
+      }
+      button {
+        display: flex;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 4px;
+        background: #1a3e3e;
+        color: #f3f5f4;
+      }
+    }
+  }
+  p {
+    color: #18121e;
+    font-family: 'Nunito Sans Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 128.571% */
+
+    span {
+      text-decoration-line: underline;
+    }
+  }
+}
