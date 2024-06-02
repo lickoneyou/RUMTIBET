@@ -82,3 +82,33 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .contacts {
+    padding-left: 16px;
+    padding-right: 16px;
+    background: white;
+  }
+
+  .contactsContainer {
+    flex-direction: column;
+    padding: 24px;
+    gap: 18px;
+  }
+  .contactsEmailWrapper {
+    form {
+      .inputWrapper {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          width: 100%;
+        }
+
+        button {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
