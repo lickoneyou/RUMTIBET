@@ -1,0 +1,25 @@
+@import 'mixins.scss';
+
+footer {
+  background: #18121e;
+}
+
+.footerContainer {
+  @include container-center;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    color: #fff;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 128.571% */
+  }
+}
+
+.underline {
+  text-decoration-line: underline;
+}
