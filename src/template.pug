@@ -8,259 +8,259 @@ html(lang='ru')
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
     title РумТибет
   body
-   header(style=`background-image: url(${require('./images/headerBG.png')})`)
-    .container
-      .menu
-        img.logo(src=require('./images/logo.png'), alt='logo')
-        nav
-          .exitPopup +
-          ul 
-            li Главная
-            li Про гида
-            li Программа тура
-            li Стоимость
-            li Блог
-            li Контакты
-        button.headerMenuBtn Консультация
-        .popUpOpenBtn 
-          span 
-          span 
-          span 
-      .headerWrapper  
-        h1 
-          | Насладись прогулкой в горах
-          br
-          | с командой единомышленников    
-        .search 
-          .searchItem 
-            .searchSelect
-              select(name="location") 
-                option(value="") Локация для тура
-                option(value="krichev") Кричев
-                option(value="Mogilev") Могилев
-            p выберите из списка
-          .searchItem 
-            .searchSelect.dataSelect 
-              p.dataTripTitle Дата похода
-              .customDateInput
-                p.customInputValue
-                .calendar-wrapper
-                  .btnWrapper
-                    button.btnPrev Предыдущий
-                    button.btnNext Следующий
-                  .divCal
-                .calendar-wrapper
-                  .btnWrapper 
-                    button.btnPrev.btnPrev2 Предыдущий
-                    button.btnNext.btnNext2 Следующий
-                  .divCal2
-                button.dataBtn Сохранить
-            p укажите диапазон
-          .searchItem 
-            .searchSelect
-              select(name="party") 
-                option(value="") Участники
-                option(value="4") 4
-                option(value="5") 5
-                option(value="6") 6
-                option(value="7") 7
-                option(value="8") 8
-                option(value="9") 9
-                option(value="10") 10
-                option(value="11") 11
-                option(value="12") 12
-                option(value="13") 13
-                option(value="13") 14
-                option(value="15") 15
-                option(value="16") 16
-                option(value="17") 17
-                option(value="18") 18
-                option(value="19") 19
-                option(value="20") 20
-            p минимум 4 человека
-          button Найти программу  
-        button.mobileBtn Найти программу  
-   main 
-    section.explore
-      .exploreContainer
-        .exloreImgContainer 
-          img(class='positionAbsolute', src=require('./images/sectionExploreImg/img1.png'), alt='explore')   
-          img(src=require('./images/sectionExploreImg/img2.png'), alt='explore')   
-        .exploreDescription 
-          .exploreDescriptionWrapper
-            p.exploreSubtitle о нашем походе
-            h2 Исследуйте все горные массивы мира вместе с нами
-            p Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
-            button Программа тура 
-    section.offer   
-      .offerContainer 
-        .offerDescriptionWrapper
-          p.offerSubtitle наше предложение
-          h2.offerTitle Лучшие программы для тебя
-          p.offerDescription  Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.
-          .descriptionProgramms 
-            .programmsItem 
-              img(src=require('./images/sectionOffer/programms/1.png'), alt='programms')        
-              .descriptionWrapper 
-                h3 Опытный гид
-                p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.
-            .programmsItem 
-              img(src=require('./images/sectionOffer/programms/2.png'), alt='programms')        
-              .descriptionWrapper 
-                h3 Безопасный поход
-                p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.
-            .programmsItem 
-              img(src=require('./images/sectionOffer/programms/3.png'), alt='programms')        
-              .descriptionWrapper 
-                h3 Лояльные цены
-                p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.  
-        .offerImg 
-          img(src=require('./images/sectionOffer/1.png'), alt='offerImg')
-          img(src=require('./images/sectionOffer/2.png'), alt='offerImg')
-          img(src=require('./images/sectionOffer/3.png'), alt='offerImg')
-          img(src=require('./images/sectionOffer/4.png'), alt='offerImg')
-        button Стоимость программы
-    section.popular
-      .popularContainer 
-        p.popularSubtitle по версии отдыхающих
-        h2.popularTitle Популярные направления
-        .popularCardWrapper
+    header(style=`background-image: url(${require('./images/headerBG.png')})`)
+      .container
+        .menu
+          img.logo(src=require('./images/logo.png'), alt='logo')
+          nav
+            .exitPopup +
+            ul 
+              li Главная
+              li Про гида
+              li Программа тура
+              li Стоимость
+              li Блог
+              li Контакты
+          button.headerMenuBtn Консультация
+          .popUpOpenBtn 
+            span 
+            span 
+            span 
+        .headerWrapper  
+          h1 
+            | Насладись прогулкой в горах
+            br
+            | с командой единомышленников    
+          .search 
+            .searchItem 
+              .searchSelect
+                select(name="location") 
+                  option(value="") Локация для тура
+                  option(value="krichev") Кричев
+                  option(value="Mogilev") Могилев
+              p выберите из списка
+            .searchItem 
+              .searchSelect.dataSelect 
+                p.dataTripTitle Дата похода
+                .customDateInput
+                  p.customInputValue
+                  .calendar-wrapper
+                    .btnWrapper
+                      button.btnPrev Предыдущий
+                      button.btnNext Следующий
+                    .divCal
+                  .calendar-wrapper
+                    .btnWrapper 
+                      button.btnPrev.btnPrev2 Предыдущий
+                      button.btnNext.btnNext2 Следующий
+                    .divCal2
+                  button.dataBtn Сохранить
+              p укажите диапазон
+            .searchItem 
+              .searchSelect
+                select(name="party") 
+                  option(value="") Участники
+                  option(value="4") 4
+                  option(value="5") 5
+                  option(value="6") 6
+                  option(value="7") 7
+                  option(value="8") 8
+                  option(value="9") 9
+                  option(value="10") 10
+                  option(value="11") 11
+                  option(value="12") 12
+                  option(value="13") 13
+                  option(value="13") 14
+                  option(value="15") 15
+                  option(value="16") 16
+                  option(value="17") 17
+                  option(value="18") 18
+                  option(value="19") 19
+                  option(value="20") 20
+              p минимум 4 человека
+            button Найти программу  
+          button.mobileBtn Найти программу  
+    main 
+      section.explore
+        .exploreContainer
+          .exloreImgContainer 
+            img(class='positionAbsolute', src=require('./images/sectionExploreImg/img1.png'), alt='explore')   
+            img(src=require('./images/sectionExploreImg/img2.png'), alt='explore')   
+          .exploreDescription 
+            .exploreDescriptionWrapper
+              p.exploreSubtitle о нашем походе
+              h2 Исследуйте все горные массивы мира вместе с нами
+              p Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.
+              button Программа тура 
+      section.offer   
+        .offerContainer 
+          .offerDescriptionWrapper
+            p.offerSubtitle наше предложение
+            h2.offerTitle Лучшие программы для тебя
+            p.offerDescription  Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.
+            .descriptionProgramms 
+              .programmsItem 
+                img(src=require('./images/sectionOffer/programms/1.png'), alt='programms')        
+                .descriptionWrapper 
+                  h3 Опытный гид
+                  p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.
+              .programmsItem 
+                img(src=require('./images/sectionOffer/programms/2.png'), alt='programms')        
+                .descriptionWrapper 
+                  h3 Безопасный поход
+                  p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.
+              .programmsItem 
+                img(src=require('./images/sectionOffer/programms/3.png'), alt='programms')        
+                .descriptionWrapper 
+                  h3 Лояльные цены
+                  p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.  
+          .offerImg 
+            img(src=require('./images/sectionOffer/1.png'), alt='offerImg')
+            img(src=require('./images/sectionOffer/2.png'), alt='offerImg')
+            img(src=require('./images/sectionOffer/3.png'), alt='offerImg')
+            img(src=require('./images/sectionOffer/4.png'), alt='offerImg')
+          button Стоимость программы
+      section.popular
+        .popularContainer 
+          p.popularSubtitle по версии отдыхающих
+          h2.popularTitle Популярные направления
+          .popularCardWrapper
 
-          .card(style=`background-image: url(${require('./images/popularSection/1.png')})`)
-            .rate 
-              span 4.9
-            .costWrapper
-              .cardTitle 
-                h3 Озеро возле гор
-                h4 романтическое приключение
-              p.cost 480 $  
+            .card(style=`background-image: url(${require('./images/popularSection/1.png')})`)
+              .rate 
+                span 4.9
+              .costWrapper
+                .cardTitle 
+                  h3 Озеро возле гор
+                  h4 романтическое приключение
+                p.cost 480 $  
 
-          .card(style=`background-image: url(${require('./images/popularSection/2.png')})`) 
-            .rate 
-              span 4.5
-            .costWrapper
-              .cardTitle 
-                h3 Ночь в горах
-                h4 в компании друзей
-              p.cost 500 $  
+            .card(style=`background-image: url(${require('./images/popularSection/2.png')})`) 
+              .rate 
+                span 4.5
+              .costWrapper
+                .cardTitle 
+                  h3 Ночь в горах
+                  h4 в компании друзей
+                p.cost 500 $  
 
-          .card(style=`background-image: url(${require('./images/popularSection/3.png')})`) 
-            .rate 
-              span 5.0
-            .costWrapper
-              .cardTitle 
-                h3 Йога в горах
-                h4 для тех, кто забоится о себе
-              p.cost 230 $
-        button Рейтинг направлений   
-    section.blog 
-      .blogContainer
-        p.blogSubtitle делимся впечатлениями
-        h2.blogTitle Блог о путешествиях
-        .blogCardWrapper 
+            .card(style=`background-image: url(${require('./images/popularSection/3.png')})`) 
+              .rate 
+                span 5.0
+              .costWrapper
+                .cardTitle 
+                  h3 Йога в горах
+                  h4 для тех, кто забоится о себе
+                p.cost 230 $
+          button Рейтинг направлений   
+      section.blog 
+        .blogContainer
+          p.blogSubtitle делимся впечатлениями
+          h2.blogTitle Блог о путешествиях
+          .blogCardWrapper 
 
-          .blogCard 
-            img(src=require('./images/sectionBlog/1.png'), alt='blogPhoto')  
-            .blogCardDescription
-              .blogTitleAndDecsriptionWrapper 
-                h3 Красивая Италя, какая она в реальности?
-                p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.
-              .blogFooter 
-                p.blogDate 01/04/2023
-                a.blogLink(href='#') читать статью
-
-          .blogCard 
-              img(src=require('./images/sectionBlog/2.png'), alt='blogPhoto')  
-              .blogCardDescription 
-                .blogTitleAndDecsriptionWrapper
-                  h3 Долой сомнения! Весь мир открыт для вас!
-                  p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации ...Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации ...
-                .blogFooter 
-                  p.blogDate 01/04/2023
-                  a.blogLink(href='#') читать статью    
-
-          .blogCard 
-              img(src=require('./images/sectionBlog/3.png'), alt='blogPhoto')  
-              .blogCardDescription 
-                .blogTitleAndDecsriptionWrapper
-                  h3 Как подготовиться к путешествию в одиночку? 
-                  p Для современного мира базовый вектор развития предполагает.
-                .blogFooter 
-                  p.blogDate 01/04/2023
-                  a.blogLink(href='#') читать статью  
-
-          .blogCard 
-              img(src=require('./images/sectionBlog/4.png'), alt='blogPhoto')  
+            .blogCard 
+              img(src=require('./images/sectionBlog/1.png'), alt='blogPhoto')  
               .blogCardDescription
                 .blogTitleAndDecsriptionWrapper 
-                  h3 Индия ... летим?
-                  p Для современного мира базовый.
+                  h3 Красивая Италя, какая она в реальности?
+                  p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.
                 .blogFooter 
                   p.blogDate 01/04/2023
                   a.blogLink(href='#') читать статью
-        button Другие материалы  
-  section.impression
-    .impressionContainer 
-      p.impressionSubtitle фото-отчет
-      h2.impressionTitle Делимся впечатлениями
-      .impressionPhotoWrapper 
-        img(src=require('./images/impressionSection/1.png'), alt='photo')
-        img(src=require('./images/impressionSection/2.png'), alt='photo')
-        img(src=require('./images/impressionSection/3.png'), alt='photo')
-        img(src=require('./images/impressionSection/4.png'), alt='photo')
-        img(src=require('./images/impressionSection/5.png'), alt='photo')
-        img(src=require('./images/impressionSection/6.png'), alt='photo')
-      button Наш pinterest
-  section.contacts 
-    .contactsContainer 
-      .contactsTitleWrapper 
-        p.contactsSubtitle актуально
-        h2.contactsTitle Получайте полезные рассылки о путешествиях
-      .contactsEmailWrapper 
-        form
-          label(for="") Введите e-mail адрес
-          .inputWrapper
-            input(placeholder='name@domain.com') 
-            button Подписаться на новости
-        p подписываясь на новости, вы автоматически соглашаетесь 
-          span с условиями обработки персональных данных 
-          | и 
-          span правилами рекламных рассылок
-  section.about 
-    .aboutContainer   
-      .aboutCompany 
-        .aboutCompanyDescriptionWrapper 
-          h2.aboutCompanyDescriptionTitle Компания «РумТибет»
-          p.aboutCompanyDescription Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
-        .aboutCompanyContactsWrapper 
-          .aboutCompanyContactsPhoneEmail 
-            p.aboutCompanyContactsEmail info@domain.com
-            p.aboutCompanyContactsPhone +7 (123) 456-78-90
-          .aboutCompanyContactsSocial
-            a(href="#") 
-              img(src=require('./images/social/tg.png'), alt='tg icon')
-            a(href="#") 
-              img(src=require('./images/social/vk.svg'), alt='vk icon')
-            a(href="#") 
-              img(src=require('./images/social/pinterest.png'), alt='pinterest icon')
-            a(href="#") 
-              img(src=require('./images/social/skype.png'), alt='skype icon')
-      .aboutOurServices
-        h2.aboutOurServicesTitle Наши услуги
-        ul 
-          li Прогулки в горы летом
-          li Зимние походы в горы
-          li Посещение храмов в горах
-          li Экстремальные виды туризма
-          li Походы в джунглях Амазонии
-          li Поездка в Африку
-      .aboutTravel
-        h2.aboutTravelTitle Важно для путешествий
-        ul
-          li Как собрать в долгий поход?
-          li Жизненно важные предметы для похода
-          li Медицинская страховка, гарантии безопасности
-          li Если вы врач - загляните сюда
+
+            .blogCard 
+                img(src=require('./images/sectionBlog/2.png'), alt='blogPhoto')  
+                .blogCardDescription 
+                  .blogTitleAndDecsriptionWrapper
+                    h3 Долой сомнения! Весь мир открыт для вас!
+                    p Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации ...Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации ...
+                  .blogFooter 
+                    p.blogDate 01/04/2023
+                    a.blogLink(href='#') читать статью    
+
+            .blogCard 
+                img(src=require('./images/sectionBlog/3.png'), alt='blogPhoto')  
+                .blogCardDescription 
+                  .blogTitleAndDecsriptionWrapper
+                    h3 Как подготовиться к путешествию в одиночку? 
+                    p Для современного мира базовый вектор развития предполагает.
+                  .blogFooter 
+                    p.blogDate 01/04/2023
+                    a.blogLink(href='#') читать статью  
+
+            .blogCard 
+                img(src=require('./images/sectionBlog/4.png'), alt='blogPhoto')  
+                .blogCardDescription
+                  .blogTitleAndDecsriptionWrapper 
+                    h3 Индия ... летим?
+                    p Для современного мира базовый.
+                  .blogFooter 
+                    p.blogDate 01/04/2023
+                    a.blogLink(href='#') читать статью
+          button Другие материалы  
+    section.impression
+      .impressionContainer 
+        p.impressionSubtitle фото-отчет
+        h2.impressionTitle Делимся впечатлениями
+        .impressionPhotoWrapper 
+          img(src=require('./images/impressionSection/1.png'), alt='photo')
+          img(src=require('./images/impressionSection/2.png'), alt='photo')
+          img(src=require('./images/impressionSection/3.png'), alt='photo')
+          img(src=require('./images/impressionSection/4.png'), alt='photo')
+          img(src=require('./images/impressionSection/5.png'), alt='photo')
+          img(src=require('./images/impressionSection/6.png'), alt='photo')
+        button Наш pinterest
+    section.contacts 
+      .contactsContainer 
+        .contactsTitleWrapper 
+          p.contactsSubtitle актуально
+          h2.contactsTitle Получайте полезные рассылки о путешествиях
+        .contactsEmailWrapper 
+          form
+            label(for="") Введите e-mail адрес
+            .inputWrapper
+              input(placeholder='name@domain.com') 
+              button Подписаться на новости
+          p подписываясь на новости, вы автоматически соглашаетесь 
+            span с условиями обработки персональных данных 
+            | и 
+            span правилами рекламных рассылок
+    section.about 
+      .aboutContainer   
+        .aboutCompany 
+          .aboutCompanyDescriptionWrapper 
+            h2.aboutCompanyDescriptionTitle Компания «РумТибет»
+            p.aboutCompanyDescription Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
+          .aboutCompanyContactsWrapper 
+            .aboutCompanyContactsPhoneEmail 
+              p.aboutCompanyContactsEmail info@domain.com
+              p.aboutCompanyContactsPhone +7 (123) 456-78-90
+            .aboutCompanyContactsSocial
+              a(href="#") 
+                img(src=require('./images/social/tg.png'), alt='tg icon')
+              a(href="#") 
+                img(src=require('./images/social/vk.svg'), alt='vk icon')
+              a(href="#") 
+                img(src=require('./images/social/pinterest.png'), alt='pinterest icon')
+              a(href="#") 
+                img(src=require('./images/social/skype.png'), alt='skype icon')
+        .aboutOurServices
+          h2.aboutOurServicesTitle Наши услуги
+          ul 
+            li Прогулки в горы летом
+            li Зимние походы в горы
+            li Посещение храмов в горах
+            li Экстремальные виды туризма
+            li Походы в джунглях Амазонии
+            li Поездка в Африку
+        .aboutTravel
+          h2.aboutTravelTitle Важно для путешествий
+          ul
+            li Как собрать в долгий поход?
+            li Жизненно важные предметы для похода
+            li Медицинская страховка, гарантии безопасности
+            li Если вы врач - загляните сюда
 
 
 
