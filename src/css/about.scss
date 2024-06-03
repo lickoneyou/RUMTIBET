@@ -1,0 +1,95 @@
+@import 'mixins.scss';
+
+.about {
+  background: #1a3e3e;
+  padding: 80px 0;
+}
+
+.aboutContainer {
+  @include container-center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 46px;
+
+  h2 {
+    color: #f3f5f4;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+  }
+
+  p,
+  li {
+    color: #fdfdfd;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+  }
+}
+
+.aboutCompanyDescriptionTitle {
+  margin-bottom: 17px;
+}
+
+.aboutOurServicesTitle,
+.aboutTravelTitle {
+  margin-bottom: 20px;
+}
+
+.aboutOurServices,
+.aboutTravel {
+  li {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  li:before {
+    content: '';
+    background-image: url(../images/arrow.png);
+    display: block;
+    width: 5.875px;
+    height: 10px;
+    margin-right: 10px;
+  }
+
+  li:hover {
+    color: #f2be22;
+    text-decoration-line: underline;
+  }
+
+  li:hover:before {
+    content: '';
+    background-image: url(../images/arrowGold.png);
+  }
+}
+
+.aboutCompany {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aboutCompanyContactsPhoneEmail {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+
+  p {
+    text-decoration-line: underline;
+  }
+}
+
+.aboutCompanyContactsSocial{
+  display: flex;
+  gap: 16px;
+}
