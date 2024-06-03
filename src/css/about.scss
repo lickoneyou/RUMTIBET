@@ -89,7 +89,15 @@
   }
 }
 
-.aboutCompanyContactsSocial{
+.aboutCompanyContactsSocial {
   display: flex;
   gap: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+  }
 }
